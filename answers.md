@@ -124,3 +124,26 @@ Ví dụ cụ thể: Hãy nhìn vào thanh điều hướng. Nếu dùng <nav>, 
 Khi nào dùng <div> vẫn phù hợp?
 Tất nhiên, mình không bài trừ <div>. Nó vẫn là "vũ khí" tốt nhất khi chúng ta cần một cái hộp hoàn toàn vô nghĩa về mặt nội dung, chỉ phục vụ mục đích trang trí hoặc bố cục (styling). 
 Ví dụ: Bạn cần một khối bao quanh để căn giữa một nhóm phần tử bằng Flexbox, hoặc tạo một đường kẻ trang trí giữa các đoạn văn — đó chính là lúc thẻ <div> được dùng tốt nhất vì nó không làm sai lệch ý nghĩa của trang web
+
+# Bài b3
+Lỗi 1: Dòng 1 — Khai báo <!DOCTYPE> thiếu html — Cách sửa: Đổi thành <!DOCTYPE html>.
+
+Lỗi 2: Dòng 2 — Thẻ <title> chưa được đóng — Cách sửa: Thêm thẻ đóng </title>.
+
+Lỗi 3: Dòng 3 — Định dạng charset viết sai (utf8) — Cách sửa: Đổi thành UTF-8.
+
+Lỗi 4: Dòng 5 — Thẻ <h1> đóng sai (dùng thẻ mở làm thẻ đóng) — Cách sửa: Đổi <h1> ở cuối thành </h1>.
+
+Lỗi 5: Dòng 9 — Thẻ <a> đóng sai (<a>) — Cách sửa: Đổi thành </a>.
+
+Lỗi 6: Dòng 17 — Thẻ <img> thiếu dấu ngoặc kép và thuộc tính alt — Cách sửa: Thêm src="iphone.jpg" và alt="iPhone 16 Pro".
+
+Lỗi 7: Dòng 19 — Lỗi lồng thẻ (thẻ <b> đóng sau thẻ <p>) — Cách sửa: Đóng theo thứ tự <b>...</b></p>.
+
+Lỗi 8: Dòng 24-27 — Tiêu đề bảng dùng thẻ <td> — Cách sửa: Đổi thành <th> để đúng ý nghĩa tiêu đề cột.
+
+Lỗi 9: Dòng 36 — Sử dụng hai thẻ <main> trên một trang — Cách sửa: Một trang chỉ được có duy nhất một thẻ <main>.
+
+Lỗi 10: Dòng 36 — Sidebar đặt trong <main> là sai mục đích — Cách sửa: Đổi thẻ <main> thứ hai thành <aside>.
+
+Lỗi 11: Dòng 41 — Thẻ <p> trong footer chưa được đóng — Cách sửa: Thêm thẻ </p> ở cuối.
