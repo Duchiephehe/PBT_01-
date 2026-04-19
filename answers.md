@@ -54,7 +54,7 @@ Lý do 2:Tốc độ tải trang và khả năng truy cập (Accessibility)
 Hiệu năng: Trình duyệt phải nhận được toàn bộ dữ liệu của bảng thì mới có thể tính toán và hiển thị chính xác layout. Điều này làm trang web trông có vẻ chậm hơn.
 ("Có chứ! <table>," Minh trả lời. "Nhưng anh Hùng dặn: chỉ dùng table cho DATA tabular. Dùng table để layout trang = sai. Ngày xưa người ta làm thế, giờ dùng CSS Grid/Flexbox.)
 
-# Câu C
+# Câu C1
 <header> <nav> <ul> <!--Chọn thẻ  header vì đây là phần đầu trang chứa logo và điều hướng tổng-->
 <!-- Chọn thẻ nav vì đây là khu vực chứa các liên kết điều hướng chính -->
             <li><a href="/">Logo</a></li>
@@ -111,3 +111,16 @@ Hiệu năng: Trình duyệt phải nhận được toàn bộ dữ liệu của
 
 <footer> <p>&copy; 2026 ShopTLU</p> <!--<footer> Chọn thẻ này vì đây là khu vực chân trang chứa thông tin bản quyền.>
 </footer>
+
+# Câu C2
+Chào đồng nghiệp, mình hiểu quan điểm của bạn vì <div> + class thực sự giúp chúng ta kiểm soát giao diện rất nhanh bằng CSS. Tuy nhiên, nếu lạm dụng "nồi súp div" (div soup) mà bỏ qua Semantic HTML, chúng ta đang trực tiếp gây hại cho sản phẩm ở hai khía cạnh kỹ thuật cốt yếu:
+
+1. SEO (Tối ưu hóa công cụ tìm kiếm): Google không "nhìn" trang web bằng mắt như chúng ta, nó đọc bằng thuật toán. Khi bạn dùng thẻ <article> cho một sản phẩm hay <header> cho đầu trang, bạn đang cung cấp các từ khóa cấu trúc giúp bot Google hiểu đâu là nội dung chính cần ưu tiên hiển thị trên kết quả tìm kiếm. Ngược lại, hàng chục thẻ <div> vô nghĩa sẽ khiến bot bị "bối rối", dẫn đến việc trang web của chúng ta bị tụt hạng so với đối thủ dùng Semantic chuẩn.
+
+2. Accessibility (Khả năng tiếp cận): Đây là lý do nhân văn và kỹ thuật quan trọng. Những người khiếm thị sử dụng phần mềm đọc màn hình (Screen Reader) để lướt web. Phần mềm này dựa vào các thẻ như <nav>, <main>, <button> để giúp họ nhảy nhanh đến mục tiêu. Nếu dùng toàn bộ là <div>, họ sẽ phải nghe máy đọc từng dòng một từ đầu đến cuối trang, cực kỳ khó khăn.
+
+Ví dụ cụ thể: Hãy nhìn vào thanh điều hướng. Nếu dùng <nav>, trình duyệt và các công cụ hỗ trợ sẽ tự động hiểu đây là khu vực liên kết quan trọng nhất. Thậm chí trên trình duyệt di động, đôi khi thẻ <nav> còn được tối ưu hóa để hiển thị menu mượt mà hơn mà không cần bạn phải viết thêm quá nhiều code hỗ trợ.
+
+Khi nào dùng <div> vẫn phù hợp?
+Tất nhiên, mình không bài trừ <div>. Nó vẫn là "vũ khí" tốt nhất khi chúng ta cần một cái hộp hoàn toàn vô nghĩa về mặt nội dung, chỉ phục vụ mục đích trang trí hoặc bố cục (styling). 
+Ví dụ: Bạn cần một khối bao quanh để căn giữa một nhóm phần tử bằng Flexbox, hoặc tạo một đường kẻ trang trí giữa các đoạn văn — đó chính là lúc thẻ <div> được dùng tốt nhất vì nó không làm sai lệch ý nghĩa của trang web
