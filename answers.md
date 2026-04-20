@@ -8,9 +8,9 @@ Bước 5: Trình duyệt nhận file và vẽ giao diện Shopee lên màn hìn
 
 ## 2.
 Tab Network trong DevTools cho thấy toàn bộ lịch sử giao tiếp mạng (network requests) giữa trình duyệt của bạn và máy chủ. Nó liệt kê mọi tài nguyên được tải về (HTML, CSS, JS, ảnh, gọi API...), dung lượng, trạng thái thành công/thất bại, và thời gian tải của từng thành phần.
-Status Code của request đầu tiên .![demo](anh1.png)
-Tổng thời gian load trang. ![demo](anh2.png)
-Một request trả về file CSS ![demo](anh3.png)
+Status Code của request đầu tiên .![demo](screenshots/A1c2,1.png)
+Tổng thời gian load trang. ![demo](screenshots/A1c2,2.png)
+Một request trả về file CSS ![demo](screenshots/A1c2,3.png)
 
 # Câu A2
 1. Lỗi dùng <div> cho phần đầu trang: Dòng <div class="header"> không mang ý nghĩa ngữ nghĩa. Cần dùng thẻ <header> để định nghĩa phần chứa logo và menu chính.
@@ -171,5 +171,5 @@ Không có thẻ table nào được dùng trong tiki.vn sau khi Inspect bằng 
 
 Câu 3:
 Form này không khai báo tường minh action và method trong HTML, mà sử dụng JavaScript để xử lý luồng dữ liệu
-Type:"tel"
+input Type:"tel"
 
