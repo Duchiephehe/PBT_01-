@@ -147,3 +147,29 @@ Lỗi 9: Dòng 36 — Sử dụng hai thẻ <main> trên một trang — Cách s
 Lỗi 10: Dòng 36 — Sidebar đặt trong <main> là sai mục đích — Cách sửa: Đổi thẻ <main> thứ hai thành <aside>.
 
 Lỗi 11: Dòng 41 — Thẻ <p> trong footer chưa được đóng — Cách sửa: Thêm thẻ </p> ở cuối.
+
+# Bài b4
+Câu 1: 3 thẻ Semantic mà trang (trong ảnh) sử dụng
+
+1.<head> : Nằm ngay dưới thẻ <html>. Thẻ này mang ngữ nghĩa rõ ràng: "Đây là phần chứa các thông tin cài đặt ngầm, siêu dữ liệu (meta), khai báo CSS, không hiển thị trực tiếp ra giao diện web"..
+
+2.<title> : Nằm bên trong <head>. Ngữ nghĩa: "Đây là tiêu đề của trang web" (Tiki - Mua hàng online giá tốt...). Nó giúp Google biết trang này tên gì và hiển thị trên tab trình duyệt.
+
+
+3.<body> : Nằm dưới <head>. Ngữ nghĩa: "Đây là phần thân, chứa toàn bộ những gì người dùng sẽ nhìn thấy và tương tác trên màn hình
+
+<div id="coupon-modal-container">:
+
+Vị trí: Nằm ở nửa dưới của ảnh 1.
+
+
+<div id="snack-bar"> (và <div id="snackbar-root">):
+
+Vị trí: Nằm ngay dưới thẻ <script id="__NEXT_DATA__"> ở ảnh 1.
+Câu 2:
+Không có thẻ table nào được dùng trong tiki.vn sau khi Inspect bằng Ctrl + F, trang web không sử dụng thẻ <table> trên giao diện này, mà dùng <div> kết hợp CSS để làm layout linh hoạt hơn cho mobile
+
+Câu 3:
+Form này không khai báo tường minh action và method trong HTML, mà sử dụng JavaScript để xử lý luồng dữ liệu
+Type:"tel"
+
